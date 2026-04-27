@@ -4,6 +4,7 @@ import heroImage from "../assets/hero-law.jpg";
 import { Counter } from "../components/Counter";
 import { TestimonialMarquee } from "../components/TestimonialMarquee";
 import { RotatingTestimonial } from "../components/RotatingTestimonial";
+import { AdvocatesSection } from "../components/AdvocatesSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -155,6 +156,11 @@ function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Advocates */}
+      <section className="border-t border-border/60 bg-gradient-to-b from-background to-card/30">
+        <AdvocatesSection compact />
       </section>
 
       {/* Featured testimonial */}
