@@ -26,10 +26,10 @@ function ContactPage() {
         <div className="mx-auto max-w-4xl px-4 text-center">
           <p className="eyebrow mb-4">Contact Us</p>
           <h1 className="font-display text-5xl sm:text-6xl font-bold leading-tight">
-            Let's discuss your <span className="text-gold">matter</span>.
+            Reach the <span className="text-gold">Chambers</span>.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Confidential. Considered. Always within 24 hours of your message.
+            For information about our practice areas and to get in touch.
           </p>
         </div>
       </section>
@@ -40,7 +40,7 @@ function ContactPage() {
             {[
               { icon: Phone, label: "Phone", value: "+91 88606 25086", href: "tel:+918860625086" },
               { icon: Mail, label: "Email", value: "contact@malhanassociates.in", href: "mailto:contact@malhanassociates.in" },
-              { icon: MapPin, label: "Chambers", value: "Chamber No. 384, Lawyers Chamber Block-3, District Court, Gautam Budh Nagar, Surajpur, U.P." },
+              { icon: MapPin, label: "Chambers", value: "Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
             ].map((c) => {
               const Wrap = c.href ? "a" : "div";
@@ -70,16 +70,16 @@ function ContactPage() {
               {submitted ? (
                 <div className="text-center py-10">
                   <CheckCircle2 className="h-14 w-14 text-gold mx-auto mb-4" />
-                  <h3 className="font-display text-2xl font-bold">Message received.</h3>
+                  <h3 className="font-display text-2xl font-bold">Enquiry received.</h3>
                   <p className="mt-2 text-muted-foreground">
-                    An advocate from our chamber will respond within 24 hours.
+                    Your enquiry has been noted. The chambers will revert as appropriate.
                   </p>
                 </div>
               ) : (
                 <>
-                  <h2 className="font-display text-2xl font-bold">Request a consultation</h2>
+                  <h2 className="font-display text-2xl font-bold">Send an enquiry</h2>
                   <p className="text-sm text-muted-foreground mt-1">
-                    All fields kept strictly confidential.
+                    For informational queries only. Please do not share confidential case details here.
                   </p>
                   <div className="mt-6 grid gap-5 sm:grid-cols-2">
                     <Field label="Full Name" name="name" required />
@@ -128,7 +128,7 @@ function ContactPage() {
           <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
             <iframe
               title="Malhan Associates office location"
-              src="https://www.google.com/maps?q=District+Court+Gautam+Budh+Nagar+Surajpur&output=embed"
+              src="https://www.google.com/maps?q=Rohini+District+Courts+Sector+14+Delhi&output=embed"
               width="100%"
               height="450"
               style={{ border: 0, display: "block" }}

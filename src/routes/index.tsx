@@ -2,39 +2,35 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CalendarCheck, MessageSquare, CreditCard, ShieldCheck, Scale, Users, Award, BookOpen } from "lucide-react";
 import heroImage from "../assets/hero-law.jpg";
 import { Counter } from "../components/Counter";
-import { TestimonialMarquee } from "../components/TestimonialMarquee";
-import { RotatingTestimonial } from "../components/RotatingTestimonial";
 import { AdvocatesSection } from "../components/AdvocatesSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Malhan Associates — Clear Counsel. Strong Representation." },
-      { name: "description", content: "Experienced advocates representing clients in civil, criminal, matrimonial, property and commercial matters since 1998." },
+      { title: "Malhan Associates — Advocates & Legal Counsel" },
+      { name: "description", content: "Informational website of Malhan Associates, advocates practising before District Courts, High Courts and Tribunals in India." },
     ],
   }),
   component: HomePage,
 });
 
 const stats = [
-  { value: 25, suffix: "+", label: "Years of Experience" },
-  { value: 1500, suffix: "+", label: "Cases Handled" },
-  { value: 1200, suffix: "+", label: "Cases Disposed Off" },
-  { value: 98, suffix: "%", label: "Client Satisfaction" },
+  { value: 25, suffix: "+", label: "Years in Practice" },
   { value: 13, suffix: "", label: "Practice Areas" },
+  { value: 3, suffix: "", label: "Tiers of Courts" },
 ];
 
 const highlights = [
-  { icon: CalendarCheck, title: "Book an Appointment", desc: "Schedule a confidential consultation at a time that works for you." },
-  { icon: MessageSquare, title: "Free Initial Consultation", desc: "Discuss your matter with our advocates before committing." },
-  { icon: CreditCard, title: "Pay Fees Online", desc: "Secure online payment for retainers and case fees." },
+  { icon: CalendarCheck, title: "Appointment by Request", desc: "Reach out to schedule a meeting at the chambers." },
+  { icon: MessageSquare, title: "Initial Consultation", desc: "Discuss your matter directly with the advocates." },
+  { icon: CreditCard, title: "Transparent Engagement", desc: "Clear communication regarding fees and process." },
 ];
 
 const pillars = [
-  { icon: ShieldCheck, title: "Trusted Legal Advice", desc: "Clear, practical guidance tailored to your situation from experienced advocates." },
-  { icon: Users, title: "Experienced Lawyers", desc: "A team of specialists across civil, criminal, family and commercial law." },
-  { icon: Award, title: "Result-Driven", desc: "Strategic representation focused on outcomes that genuinely matter to you." },
-  { icon: BookOpen, title: "Across All Forums", desc: "Representation before every court, tribunal and quasi-judicial authority." },
+  { icon: ShieldCheck, title: "Informed Counsel", desc: "Practical guidance grounded in long courtroom experience." },
+  { icon: Users, title: "Experienced Advocates", desc: "Practising across civil, criminal, family and commercial law." },
+  { icon: Award, title: "Diligent Representation", desc: "Careful preparation and structured case management." },
+  { icon: BookOpen, title: "Across All Forums", desc: "Appearance before courts, tribunals and quasi-judicial authorities." },
 ];
 
 function HomePage() {
@@ -54,10 +50,10 @@ function HomePage() {
           <div className="max-w-3xl animate-fade-up">
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold" />
-              <span className="eyebrow">Trusted Legal Counsel since 1998</span>
+              <span className="eyebrow">Advocates & Legal Counsel</span>
             </div>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
-              Clear Counsel. <span className="text-gold">Strong Representation.</span> Real Results.
+              Considered Counsel. <span className="text-gold">Diligent Representation.</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg text-foreground/85 leading-relaxed">
               Whether you need legal advice, professional drafting of documents, or courtroom
@@ -69,7 +65,7 @@ function HomePage() {
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-full gradient-gold px-7 py-3.5 text-sm font-semibold text-gold-foreground shadow-elegant hover:opacity-95 transition-all"
               >
-                Book a Consultation <ArrowRight className="h-4 w-4" />
+                Contact the Chambers <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/about"
@@ -104,7 +100,7 @@ function HomePage() {
       {/* Stats */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
             {stats.map((s) => (
               <div key={s.label}>
                 <div className="font-display text-5xl sm:text-6xl font-bold text-gold tabular-nums">
@@ -164,42 +160,24 @@ function HomePage() {
         <AdvocatesSection compact />
       </section>
 
-      {/* Featured testimonial */}
-      <section className="py-24 bg-card/40 border-y border-border/60">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="eyebrow mb-3">Client Voices</p>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold">
-              What Our Clients Say
-            </h2>
-          </div>
-          <RotatingTestimonial />
-        </div>
-      </section>
-
-      {/* Marquee testimonials */}
-      <section className="py-16">
-        <TestimonialMarquee />
-      </section>
-
       {/* CTA */}
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-gold/30 bg-card/60 p-10 sm:p-14 text-center relative overflow-hidden">
             <Scale className="absolute -right-10 -top-10 h-48 w-48 text-gold/5" />
-            <p className="eyebrow mb-3">Ready to Begin?</p>
+            <p className="eyebrow mb-3">Get in Touch</p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold">
-              Let's discuss your matter — confidentially.
+              For information regarding the chambers.
             </h2>
             <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-              The first consultation is on us. Tell us what you're facing and we'll outline
-              the options ahead.
+              The contents of this website are for informational purposes only. Please reach
+              out for queries regarding our practice areas and contact details.
             </p>
             <Link
               to="/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-full gradient-gold px-7 py-3.5 text-sm font-semibold text-gold-foreground shadow-elegant hover:opacity-95 transition-all"
             >
-              Book a Consultation <ArrowRight className="h-4 w-4" />
+              Contact the Chambers <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
