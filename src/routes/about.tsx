@@ -49,12 +49,11 @@ function AboutPage() {
       {/* Stats */}
       <section className="py-12 border-y border-border/60 bg-card/40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
             {[
               { v: 25, s: "+", l: "Years in Practice" },
-              { v: 1500, s: "+", l: "Cases Handled" },
-              { v: 98, s: "%", l: "Client Satisfaction" },
               { v: 13, s: "", l: "Practice Areas" },
+              { v: 3, s: "", l: "Tiers of Courts" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-display text-4xl sm:text-5xl font-bold text-gold tabular-nums">

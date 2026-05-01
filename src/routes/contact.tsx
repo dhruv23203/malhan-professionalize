@@ -40,7 +40,7 @@ function ContactPage() {
             {[
               { icon: Phone, label: "Phone", value: "+91 88606 25086", href: "tel:+918860625086" },
               { icon: Mail, label: "Email", value: "contact@malhanassociates.in", href: "mailto:contact@malhanassociates.in" },
-              { icon: MapPin, label: "Chambers", value: "Chamber No. 384, Lawyers Chamber Block-3, District Court, Gautam Budh Nagar, Surajpur, U.P." },
+              { icon: MapPin, label: "Chambers", value: "Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
             ].map((c) => {
               const Wrap = c.href ? "a" : "div";
@@ -128,7 +128,7 @@ function ContactPage() {
           <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
             <iframe
               title="Malhan Associates office location"
-              src="https://www.google.com/maps?q=District+Court+Gautam+Budh+Nagar+Surajpur&output=embed"
+              src="https://www.google.com/maps?q=Rohini+District+Courts+Sector+14+Delhi&output=embed"
               width="100%"
               height="450"
               style={{ border: 0, display: "block" }}
