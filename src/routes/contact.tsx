@@ -34,13 +34,13 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="pb-24">
+      <section className="pb-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2 space-y-5">
             {[
               { icon: Phone, label: "Phone", value: "+91 88606 25086", href: "tel:+918860625086" },
               { icon: Mail, label: "Email", value: "contact@malhanassociates.in", href: "mailto:contact@malhanassociates.in" },
-              { icon: MapPin, label: "Chambers", value: "District Court Complex, India" },
+              { icon: MapPin, label: "Chambers", value: "Chamber No. 384, Lawyers Chamber Block-3, District Court, Gautam Budh Nagar, Surajpur, U.P." },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
             ].map((c) => {
               const Wrap = c.href ? "a" : "div";
@@ -112,6 +112,30 @@ function ContactPage() {
                 </>
               )}
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Map */}
+      <section className="pb-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="eyebrow mb-3">Find Us</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold">
+              Visit Our <span className="text-gold">Chambers</span>
+            </h2>
+          </div>
+          <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
+            <iframe
+              title="Malhan Associates office location"
+              src="https://www.google.com/maps?q=District+Court+Gautam+Budh+Nagar+Surajpur&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
