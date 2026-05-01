@@ -1,5 +1,5 @@
-import ramnathImg from "../assets/lawyer-ramnath.png";
-import rajniImg from "../assets/lawyer-rajni.png";
+import ramnathImg from "../assets/lawyer-ramnath.webp";
+import rajniImg from "../assets/lawyer-rajni.webp";
 
 export type Advocate = {
   name: string;
@@ -54,6 +54,9 @@ export function AdvocatesSection({ compact = false }: Props) {
                   alt={`${a.name}, ${a.title}`}
                   className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
+                  decoding="async"
+                  width={800}
+                  height={1000}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">

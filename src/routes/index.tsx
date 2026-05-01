@@ -44,6 +44,8 @@ function HomePage() {
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
           height={1080}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 gradient-hero" />
         <div className="relative mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-32 pb-20">
