@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
+import { DisclaimerGate } from "../components/DisclaimerGate";
 
 import appCss from "../styles.css?url";
 
@@ -75,6 +76,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <div className="min-h-screen flex flex-col">
+      <DisclaimerGate />
       <SiteHeader />
       <main className="flex-1 pt-20">
         <Outlet />
