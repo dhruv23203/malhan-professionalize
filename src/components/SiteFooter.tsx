@@ -19,8 +19,8 @@ export function SiteFooter() {
               </div>
             </Link>
             <p className="mt-5 max-w-md text-sm text-muted-foreground leading-relaxed">
-              Trusted legal counsel since 1998. Representing clients in civil, criminal,
-              matrimonial, family, property and commercial matters with diligence and integrity.
+              An association of advocates practising before District Courts, High Courts and
+              Tribunals. This website is for informational purposes only.
             </p>
           </div>
 
@@ -53,9 +53,17 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Malhan Associates. All rights reserved.</p>
-          <p className="italic">Bar Council compliant • Confidential consultation</p>
+        <div className="mt-12 pt-6 border-t border-border/60 space-y-3 text-xs text-muted-foreground">
+          <p className="italic leading-relaxed">
+            Disclaimer: Under the rules of the Bar Council of India, an advocate is prohibited
+            from soliciting work or advertising through communication in public domain. This
+            website is meant solely for the purposes of providing information and not for the
+            purpose of advertising.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p>© {new Date().getFullYear()} Malhan Associates. All rights reserved.</p>
+            <p>Bar Council of India compliant</p>
+          </div>
         </div>
       </div>
     </footer>
