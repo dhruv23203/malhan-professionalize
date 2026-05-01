@@ -115,6 +115,30 @@ function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Map */}
+      <section className="pb-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="eyebrow mb-3">Find Us</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold">
+              Visit Our <span className="text-gold">Chambers</span>
+            </h2>
+          </div>
+          <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
+            <iframe
+              title="Malhan Associates office location"
+              src="https://www.google.com/maps?q=District+Court+Gautam+Budh+Nagar+Surajpur&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
