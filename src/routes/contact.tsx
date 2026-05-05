@@ -40,7 +40,8 @@ function ContactPage() {
             {[
               { icon: Phone, label: "Phone", value: "+91 88606 25086", href: "tel:+918860625086" },
               { icon: Phone, label: "Phone", value: "+91 96546 57848", href: "tel:+919654657848" },
-              { icon: Mail, label: "Email", value: "contact@malhanassociates.in", href: "mailto:contact@malhanassociates.in" },
+              { icon: Mail, label: "Email", value: "rajnimalhan.advocate@gmail.com", href: "mailto:rajnimalhan.advocate@gmail.com" },
+              { icon: Mail, label: "Email", value: "rammalhanadvocate@gmail.com", href: "mailto:rammalhanadvocate@gmail.com" },
               { icon: MapPin, label: "Chambers", value: "Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
               { icon: MapPin, label: "Office", value: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar, New Delhi – 110059" },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
