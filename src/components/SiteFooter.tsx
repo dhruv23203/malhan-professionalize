@@ -46,7 +46,10 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="h-4 w-4 mt-0.5 text-gold shrink-0" />
-                <a href="mailto:contact@malhanassociates.in" className="hover:text-foreground">contact@malhanassociates.in</a>
+                <div className="flex flex-col break-all">
+                  <a href="mailto:rajnimalhan.advocate@gmail.com" className="hover:text-foreground">rajnimalhan.advocate@gmail.com</a>
+                  <a href="mailto:rammalhanadvocate@gmail.com" className="hover:text-foreground">rammalhanadvocate@gmail.com</a>
+                </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />
