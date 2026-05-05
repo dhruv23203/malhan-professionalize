@@ -39,7 +39,10 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2.5">
                 <Phone className="h-4 w-4 mt-0.5 text-gold shrink-0" />
-                <a href="tel:+918860625086" className="hover:text-foreground">+91 88606 25086</a>
+                <div className="flex flex-col">
+                  <a href="tel:+918860625086" className="hover:text-foreground">+91 88606 25086</a>
+                  <a href="tel:+919654657848" className="hover:text-foreground">+91 96546 57848</a>
+                </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="h-4 w-4 mt-0.5 text-gold shrink-0" />
@@ -47,7 +50,11 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />
-                <span>Rohini District Courts, Sector 14, New Delhi – 110085</span>
+                <span>Chambers: Rohini District Courts, Sector 14, New Delhi – 110085</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />
+                <span>Office: C-20, Gulab Bagh, Om Vihar, Uttam Nagar, New Delhi – 110059</span>
               </li>
             </ul>
           </div>

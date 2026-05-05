@@ -39,8 +39,10 @@ function ContactPage() {
           <div className="lg:col-span-2 space-y-5">
             {[
               { icon: Phone, label: "Phone", value: "+91 88606 25086", href: "tel:+918860625086" },
+              { icon: Phone, label: "Phone", value: "+91 96546 57848", href: "tel:+919654657848" },
               { icon: Mail, label: "Email", value: "contact@malhanassociates.in", href: "mailto:contact@malhanassociates.in" },
               { icon: MapPin, label: "Chambers", value: "Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
+              { icon: MapPin, label: "Office", value: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar, New Delhi – 110059" },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
             ].map((c) => {
               const Wrap = c.href ? "a" : "div";
@@ -122,20 +124,40 @@ function ContactPage() {
           <div className="text-center mb-8">
             <p className="eyebrow mb-3">Find Us</p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold">
-              Visit Our <span className="text-gold">Chambers</span>
+              Visit Our <span className="text-gold">Locations</span>
             </h2>
           </div>
-          <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
-            <iframe
-              title="Malhan Associates office location"
-              src="https://www.google.com/maps?q=Rohini+District+Courts+Sector+14+Delhi&output=embed"
-              width="100%"
-              height="450"
-              style={{ border: 0, display: "block" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <div className="grid lg:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-display text-lg font-semibold mb-3">Chambers — Rohini District Courts</h3>
+              <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
+                <iframe
+                  title="Malhan Associates chambers — Rohini District Courts"
+                  src="https://www.google.com/maps?q=Rohini+District+Courts+Sector+14+Delhi&output=embed"
+                  width="100%"
+                  height="380"
+                  style={{ border: 0, display: "block" }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="font-display text-lg font-semibold mb-3">Office — Uttam Nagar</h3>
+              <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
+                <iframe
+                  title="Malhan Associates office — Uttam Nagar"
+                  src="https://www.google.com/maps?q=C-20+Gulab+Bagh+Kiran+Garden+Gurudwara+Om+Vihar+Uttam+Nagar+New+Delhi+110059&output=embed"
+                  width="100%"
+                  height="380"
+                  style={{ border: 0, display: "block" }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
