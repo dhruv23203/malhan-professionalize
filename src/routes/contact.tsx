@@ -191,12 +191,14 @@ function ContactPage() {
 function Field({
   label, name, type = "text", required, placeholder,
 }: { label: string; name: string; type?: string; required?: boolean; placeholder?: string }) {
+  const id = `contact-${name}`;
   return (
     <div>
-      <label className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
+      <label htmlFor={id} className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
         {label}
       </label>
       <input
+        id={id}
         type={type}
         name={name}
         required={required}
