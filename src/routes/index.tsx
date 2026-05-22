@@ -103,7 +103,7 @@ function HomePage() {
                 to="/about"
                 className="inline-flex items-center gap-2 rounded-full border border-foreground/30 bg-background/30 backdrop-blur px-7 py-3.5 text-sm font-semibold text-foreground hover:border-gold hover:text-gold transition-all"
               >
-                Learn More
+                About Malhan Associates
               </Link>
             </div>
           </div>
