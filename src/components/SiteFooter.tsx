@@ -53,7 +53,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />
-                <span>Chambers: Rohini District Courts, Sector 14, New Delhi – 110085</span>
+                <span>Chambers: Chamber No. 216, Rohini District Courts, Sector 14, New Delhi – 110085</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 text-gold shrink-0" />

@@ -6,9 +6,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Malhan Associates" },
-      { name: "description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { name: "description", content: "Reach Malhan Associates at our Chamber No. 216, Rohini District Courts or Uttam Nagar office, by phone or email." },
       { property: "og:title", content: "Contact Malhan Associates" },
-      { property: "og:description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { property: "og:description", content: "Reach Malhan Associates at our Chamber No. 216, Rohini District Courts or Uttam Nagar office, by phone or email." },
       { property: "og:url", content: "/contact" },
     ],
     scripts: [
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/contact")({
           email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
           openingHours: "Mo-Sa 10:00-19:00",
           address: [
-            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "Chamber No. 216, Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
             { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
           ],
         }),
@@ -63,7 +63,7 @@ function ContactPage() {
               { icon: Phone, label: "Phone", value: "+91 96546 57848", href: "tel:+919654657848" },
               { icon: Mail, label: "Email", value: "rajnimalhan.advocate@gmail.com", href: "mailto:rajnimalhan.advocate@gmail.com" },
               { icon: Mail, label: "Email", value: "rammalhanadvocate@gmail.com", href: "mailto:rammalhanadvocate@gmail.com" },
-              { icon: MapPin, label: "Chambers", value: "Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
+              { icon: MapPin, label: "Chambers", value: "Chamber No. 216, Rohini District Courts, Sector 14, Rohini, New Delhi – 110085" },
               { icon: MapPin, label: "Office", value: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar, New Delhi – 110059" },
               { icon: Clock, label: "Hours", value: "Mon – Sat • 10:00 AM – 7:00 PM" },
             ].map((c) => {
@@ -152,10 +152,10 @@ function ContactPage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-display text-lg font-semibold mb-3">Chambers — Rohini District Courts</h3>
+              <h3 className="font-display text-lg font-semibold mb-3">Chamber No. 216 — Rohini District Courts</h3>
               <div className="rounded-3xl overflow-hidden border border-border/60 shadow-elegant">
                 <iframe
-                  title="Malhan Associates chambers — Rohini District Courts"
+                  title="Malhan Associates chambers — Chamber No. 216, Rohini District Courts"
                   src="https://www.google.com/maps?q=Rohini+District+Courts+Sector+14+Delhi&output=embed"
                   width="100%"
                   height="380"
