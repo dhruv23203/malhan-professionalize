@@ -85,7 +85,7 @@ function HomePage() {
               <span className="eyebrow">Advocates & Legal Counsel</span>
             </div>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
-              Considered Counsel. <span className="text-gold">Diligent Representation.</span>
+              Malhan Associates — <span className="text-gold">Advocates & Legal Counsel</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg text-foreground/85 leading-relaxed">
               Whether you need legal advice, professional drafting of documents, or courtroom
