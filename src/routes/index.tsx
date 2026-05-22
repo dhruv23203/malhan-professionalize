@@ -9,6 +9,36 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Malhan Associates — Advocates & Legal Counsel" },
       { name: "description", content: "Informational website of Malhan Associates, advocates practising before District Courts, High Courts and Tribunals in India." },
+      { property: "og:title", content: "Malhan Associates — Advocates & Legal Counsel" },
+      { property: "og:description", content: "Informational website of Malhan Associates, advocates practising before District Courts, High Courts and Tribunals in India." },
+      { property: "og:url", content: "/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/",
+          telephone: ["+91-88606-25086", "+91-96546-57848"],
+          email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
+          address: [
+            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
+          ],
+          areaServed: "IN",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/",
+        }),
+      },
     ],
   }),
   component: HomePage,
