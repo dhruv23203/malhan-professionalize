@@ -39,7 +39,7 @@ function AboutPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="eyebrow mb-4">About Malhan Associates</p>
           <h1 className="font-display text-5xl sm:text-6xl font-bold leading-tight">
-            Built on <span className="text-gold">trust, experience</span> and results.
+            About Malhan Associates — <span className="text-gold">Decades of Legal Excellence</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             An association of advocates highly experienced and skilled in their respective
