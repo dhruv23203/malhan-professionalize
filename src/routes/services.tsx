@@ -6,6 +6,9 @@ export const Route = createFileRoute("/services")({
     meta: [
       { title: "Services — Malhan Associates" },
       { name: "description", content: "Civil, criminal, matrimonial, property, MACT, cheque bounce, commercial and environmental law services." },
+      { property: "og:title", content: "Practice Areas — Malhan Associates" },
+      { property: "og:description", content: "Civil, criminal, matrimonial, property, MACT, cheque bounce, commercial and environmental law services." },
+      { property: "og:url", content: "/services" },
     ],
   }),
   component: ServicesPage,

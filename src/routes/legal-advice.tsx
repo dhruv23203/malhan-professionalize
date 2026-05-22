@@ -6,6 +6,23 @@ export const Route = createFileRoute("/legal-advice")({
     meta: [
       { title: "Legal Advice — Malhan Associates" },
       { name: "description", content: "Confidential legal consultations and written opinions from experienced advocates." },
+      { property: "og:title", content: "Legal Advice — Malhan Associates" },
+      { property: "og:description", content: "Confidential legal consultations and written opinions from experienced advocates." },
+      { property: "og:url", content: "/legal-advice" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
     ],
   }),
   component: LegalAdvicePage,

@@ -1,0 +1,11 @@
+# Malhan Associates
+
+> Informational website of Malhan Associates, an association of advocates practising before District Courts, High Courts and Tribunals in India. Provided for information only; not for solicitation or advertising under the Bar Council of India rules.
+
+## Pages
+
+- [Home](/): Overview of Malhan Associates and its practice.
+- [About](/about): The firm's story, mission, values and advocates.
+- [Services](/services): Practice areas including civil, criminal, matrimonial, property, MACT, cheque-bounce, commercial and environmental law.
+- [Legal Advice](/legal-advice): How to obtain a confidential consultation, with frequently asked questions.
+- [Contact](/contact): Chambers and office addresses, phone numbers and email contacts.

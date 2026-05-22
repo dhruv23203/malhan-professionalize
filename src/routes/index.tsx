@@ -9,6 +9,36 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Malhan Associates — Advocates & Legal Counsel" },
       { name: "description", content: "Informational website of Malhan Associates, advocates practising before District Courts, High Courts and Tribunals in India." },
+      { property: "og:title", content: "Malhan Associates — Advocates & Legal Counsel" },
+      { property: "og:description", content: "Informational website of Malhan Associates, advocates practising before District Courts, High Courts and Tribunals in India." },
+      { property: "og:url", content: "/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/",
+          telephone: ["+91-88606-25086", "+91-96546-57848"],
+          email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
+          address: [
+            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
+          ],
+          areaServed: "IN",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/",
+        }),
+      },
     ],
   }),
   component: HomePage,
@@ -55,7 +85,7 @@ function HomePage() {
               <span className="eyebrow">Advocates & Legal Counsel</span>
             </div>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-foreground">
-              Considered Counsel. <span className="text-gold">Diligent Representation.</span>
+              Malhan Associates — <span className="text-gold">Advocates & Legal Counsel</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg text-foreground/85 leading-relaxed">
               Whether you need legal advice, professional drafting of documents, or courtroom
@@ -73,7 +103,7 @@ function HomePage() {
                 to="/about"
                 className="inline-flex items-center gap-2 rounded-full border border-foreground/30 bg-background/30 backdrop-blur px-7 py-3.5 text-sm font-semibold text-foreground hover:border-gold hover:text-gold transition-all"
               >
-                Learn More
+                About Malhan Associates
               </Link>
             </div>
           </div>

@@ -6,7 +6,28 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Malhan Associates" },
-      { name: "description", content: "Book a confidential consultation with our experienced advocates." },
+      { name: "description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { property: "og:title", content: "Contact Malhan Associates" },
+      { property: "og:description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { property: "og:url", content: "/contact" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/contact",
+          telephone: ["+91-88606-25086", "+91-96546-57848"],
+          email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
+          openingHours: "Mo-Sa 10:00-19:00",
+          address: [
+            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
+          ],
+        }),
+      },
     ],
   }),
   component: ContactPage,
@@ -94,10 +115,11 @@ function ContactPage() {
                       <Field label="Matter Type" name="matter" placeholder="e.g. Civil, Criminal, Family, Property" />
                     </div>
                     <div className="sm:col-span-2">
-                      <label className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
+                      <label htmlFor="contact-message" className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
                         Brief Description
                       </label>
                       <textarea
+                        id="contact-message"
                         name="message"
                         rows={5}
                         required
@@ -169,12 +191,14 @@ function ContactPage() {
 function Field({
   label, name, type = "text", required, placeholder,
 }: { label: string; name: string; type?: string; required?: boolean; placeholder?: string }) {
+  const id = `contact-${name}`;
   return (
     <div>
-      <label className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
+      <label htmlFor={id} className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
         {label}
       </label>
       <input
+        id={id}
         type={type}
         name={name}
         required={required}
