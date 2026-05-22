@@ -6,7 +6,28 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Malhan Associates" },
-      { name: "description", content: "Book a confidential consultation with our experienced advocates." },
+      { name: "description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { property: "og:title", content: "Contact Malhan Associates" },
+      { property: "og:description", content: "Reach Malhan Associates at our Rohini chambers or Uttam Nagar office, by phone or email." },
+      { property: "og:url", content: "/contact" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          name: "Malhan Associates",
+          url: "https://glowup-malhan-hub.lovable.app/contact",
+          telephone: ["+91-88606-25086", "+91-96546-57848"],
+          email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
+          openingHours: "Mo-Sa 10:00-19:00",
+          address: [
+            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
+          ],
+        }),
+      },
     ],
   }),
   component: ContactPage,
