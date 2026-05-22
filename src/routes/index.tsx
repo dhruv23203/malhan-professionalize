@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
           telephone: ["+91-88606-25086", "+91-96546-57848"],
           email: ["rajnimalhan.advocate@gmail.com", "rammalhanadvocate@gmail.com"],
           address: [
-            { "@type": "PostalAddress", streetAddress: "Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
+            { "@type": "PostalAddress", streetAddress: "Chamber No. 216, Rohini District Courts, Sector 14", addressLocality: "Rohini, New Delhi", postalCode: "110085", addressCountry: "IN" },
             { "@type": "PostalAddress", streetAddress: "C-20, Gulab Bagh, near Kiran Garden Gurudwara, Om Vihar, Uttam Nagar", addressLocality: "New Delhi", postalCode: "110059", addressCountry: "IN" },
           ],
           areaServed: "IN",
