@@ -8,6 +8,9 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About — Malhan Associates" },
       { name: "description", content: "Two and a half decades of trusted legal practice across civil, criminal, family, property, commercial and environmental law." },
+      { property: "og:title", content: "About Malhan Associates — Decades of Legal Excellence" },
+      { property: "og:description", content: "Two and a half decades of trusted legal practice across civil, criminal, family, property, commercial and environmental law." },
+      { property: "og:url", content: "/about" },
     ],
   }),
   component: AboutPage,
