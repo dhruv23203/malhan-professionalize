@@ -115,10 +115,11 @@ function ContactPage() {
                       <Field label="Matter Type" name="matter" placeholder="e.g. Civil, Criminal, Family, Property" />
                     </div>
                     <div className="sm:col-span-2">
-                      <label className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
+                      <label htmlFor="contact-message" className="block text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground mb-2">
                         Brief Description
                       </label>
                       <textarea
+                        id="contact-message"
                         name="message"
                         rows={5}
                         required
